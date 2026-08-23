@@ -101,6 +101,35 @@
     margin-bottom:1.8rem;
   }
 
+  .cv-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--pine);
+    border:1px solid var(--pine-soft);
+    padding:0.5rem 0.85rem;
+    border-radius:3px;
+    width:fit-content;
+    margin-bottom:1.8rem;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+
+  .cv-btn:hover{
+    background:var(--pine);
+    color:var(--paper);
+  }
+
+  .cv-btn svg{
+    width:13px;
+    height:13px;
+    stroke:currentColor;
+    fill:none;
+    stroke-width:1.8;
+  }
+
   nav{
     display:flex;
     flex-direction:column;
@@ -461,6 +490,11 @@
     </div>
     <div class="id-name">Abdalla Sheaba</div>
     <div class="id-role">Backend software engineer. Python, Django, systems that hold up under load.</div>
+
+    <a class="cv-btn" href="assets/cv.pdf" download>
+      <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download CV
+    </a>
 
     <nav>
       <a href="#about"><span class="tick">—</span> About</a>
